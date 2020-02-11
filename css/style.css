@@ -12,7 +12,6 @@
 
 /* -----    General    ----- */
 
-;
 body {
     font-family: 'Arial', sans-serif;
     --webkit-font-smoothing: antialiased;
@@ -52,6 +51,27 @@ img {
     margin: auto;
     overflow: hidden;
     padding: 0 2 rem;
+}
+
+
+/*Text Styles*/
+
+.text-xl {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.text-lg {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-dark {
+    color: #999;
 }
 
 
@@ -120,6 +140,12 @@ img {
     cursor: pointer;
 }
 
+.tab-content {
+    padding: 3rem 0;
+    background: #000;
+    color: #fff;
+}
+
 .tabs p {
     font-size: 1.2rem;
     padding-top: .5rem;
@@ -129,9 +155,12 @@ img {
     border-bottom: var(--primary-color) 4px solid;
 }
 
-.tab-1-content .tab-1-content-inner {
+#tab-1-content .tab-1-content-inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -203,4 +232,49 @@ img {
     font-size: 1.9rem;
     line-height: 1.25;
     margin: 0 0 2rem;
+}
+
+
+/* Tabs */
+
+.tabs {
+    background: var(--dark-color);
+    color: #999;
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tabs .container>div {
+    padding: 1.5rem 0;
+}
+
+.tabs .container>div:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.tabs p {
+    font-size: 1.2rem;
+    padding-top: .5rem;
+}
+
+.tab-border {
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
